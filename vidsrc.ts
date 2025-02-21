@@ -125,6 +125,7 @@ export const vidsrcScrape = async (tmdbId: string, type: "movie" | "tv", season?
 	//	? `https://vidsrc.net/embed/${type}?tmdb=${tmdbId}`
 	//	: `https://vidsrc.to/embed/${type}?tmdb=${tmdbId}&season=${season}&episode=${episode}`
 	// Get the raw html from the links above
+	console.log(url)
 	const embed = await fetch(url);
 	const embedRes = await embed.text()
 
