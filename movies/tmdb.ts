@@ -277,6 +277,7 @@ export class TMDB {
 	}
 
 	async getEpisodeSources(id: string, season: number, episode: number): Promise<PeekABoo<ISource | string>> {
+		console.log(id, season, episode)
 		try {
 			const res = await vidsrcScrape(id, "tv", season, episode)
 
@@ -299,9 +300,10 @@ export class TMDB {
 				boo: toReturn
 			}
 		} catch (e) {
+			console.log(e)
 			return {
 				peek: false,
-				boo: e as string
+				boo: "Couldn't get the sources!"
 			}
 		}
 	}
