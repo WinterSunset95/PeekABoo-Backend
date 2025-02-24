@@ -1,4 +1,4 @@
-import { Release } from "./types.ts";
+import { Release } from "peek-a-boo.ts";
 
 export const data: { latest: Release, previous: Release[] } = {
 	latest: {

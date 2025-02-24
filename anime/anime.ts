@@ -1,6 +1,4 @@
-import { AnimePahe } from "./animepahe.ts";
-import { Gogo } from "./gogo.ts";
-import { Zoro } from "./zoro.ts";
+import { AnimePahe, Gogo, Zoro } from "peek-a-boo.ts";
 
 export const AnimeProviders = {
 	gogo: new Gogo,
