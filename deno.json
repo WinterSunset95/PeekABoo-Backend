@@ -10,7 +10,7 @@
     "puppeteer": "npm:puppeteer@^24.2.1",
 	"socket.io": "https://deno.land/x/socket_io@0.2.1/mod.ts",
 	"cheerio": "npm:cheerio",
-	"peek-a-boo.ts": "../peek-a-boo.ts/index.ts",
+	"peek-a-boo.ts": "npm:peek-a-boo.ts@^2.0.0",
   },
   "nodeModulesDir": "auto"
 }
